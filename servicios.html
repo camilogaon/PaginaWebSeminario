@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Salud Total</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/cruz-roja.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+          <img
+            src="img/cruz-roja.ico"
+            height="30"
+            alt="MDB Logo"
+            loading="lazy"
+          />
+          <label for="">Clinica Salud Total</label>
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+          </li>
+        </ul>
+
+        <button id="button-iniciarsesion" type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal1">
+          Contactanos
+        </button>
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Contactanos</h5>
+                <button  type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="form-outline">
+                  <input type="text" id="typeText" class="form-control" />
+                  <label class="form-label" for="typeText">Nombre</label>
+                </div>
+                <div class="form-outline">
+                  <input type="number" id="typeNumber" class="form-control" />
+                  <label class="form-label" for="typeNumber">Telefono</label>
+                </div>
+                <div class="form-outline">
+                  <input type="email" id="typeEmail" class="form-control" />
+                  <label class="form-label" for="typeEmail">Correo electronico</label>
+                </div>
+                <div class="form-outline">
+                  <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+                  <label class="form-label" for="textAreaExample">Mensaje</label>
+                </div>
+                
+                <button style="margin-top: 30px; display: flex; justify-content: center;" type="button" class="btn btn-success">Enviar</button>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="button-iniciarsesion" type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal1">
+          Iniciar sesion
+        </button>
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesion</h5>
+                <button  type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="form-outline">
+                  <input type="text" id="typeText" class="form-control" />
+                  <label class="form-label" for="typeText">Usuario</label>
+                </div>
+                <div style="margin-top: 30px;" class="form-outline">
+                  <input type="password" id="typePassword" class="form-control" />
+                  <label class="form-label" for="typePassword">Contraseña</label>
+                </div>
+                <button style="margin-top: 30px; display: flex; justify-content: center;" type="button" class="btn btn-success">Iniciar Sesion</button>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="d-flex align-items-center">
+          <a href="registro.html">
+            <button id="button-principal" type="button" class="btn btn-primary me-3">
+              Registrarse
+            </button>
+          </a>
+          
+          
+        </div>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+  
+      
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+    
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="card">
+            <img id="img-servicios" src="img/cardiologia.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <h5 class="card-title">Cardiologia</h5>
+              <p class="card-text">Cuidando su corazón, cuidando su vida</p>
+              <button id="button-principal" type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal1">
+                Ver Mas
+              </button>
+              <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Cardiologia</h5>
+                      <button  type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p style="text-align: justify;">Nuestros servicios de cardiología ofrecen una atención integral y especializada para el diagnóstico, tratamiento y prevención de enfermedades del corazón. Contamos con un equipo de médicos cardiólogos altamente capacitados y comprometidos, respaldados por tecnología de vanguardia y los últimos avances en medicina cardiovascular. <br><br>
+      
+                        Nuestra prioridad es brindar atención médica de calidad, personalizada y centrada en el paciente. Realizamos evaluaciones completas, que incluyen historial médico, exámenes físicos y pruebas diagnósticas avanzadas, con el objetivo de obtener un diagnóstico preciso y diseñar un plan de tratamiento individualizado.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <img id="img-servicios" src="img/neuro.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <h5 class="card-title">Neurologia</h5>
+              <p class="card-text">Enfoque especializado en el cuidado de su sistema nervioso</p>
+              <button id="button-principal" type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal2">
+                Ver Mas
+              </button>
+              <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Neurologia</h5>
+                      <button  type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p style="text-align: justify;">Nuestros servicios de neurología están dedicados al diagnóstico, tratamiento y manejo de trastornos neurológicos, brindando atención especializada y compasiva a nuestros pacientes. Contamos con un equipo de neurólogos altamente capacitados y experimentados, respaldados por tecnología de vanguardia y los últimos avances en neurociencia. <br><br>
+      
+                        Nuestro enfoque principal es la evaluación exhaustiva y precisa de los trastornos neurológicos, utilizando herramientas clínicas y pruebas diagnósticas avanzadas. Trabajamos en estrecha colaboración con nuestros pacientes para comprender sus síntomas, historial médico y preocupaciones individuales, con el objetivo de ofrecer un diagnóstico preciso y un plan de tratamiento personalizado.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <img id="img-servicios" src="img/reauma.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <h5 class="card-title">Reumatologia</h5>
+              <p class="card-text">Recuperando su calidad de vida</p>
+              <button id="button-principal" type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal3">
+                Ver Mas
+              </button>
+              <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Reumatología</h5>
+                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p style="text-align: justify;">Nuestros servicios de reumatología están diseñados para diagnosticar, tratar y manejar una amplia variedad de enfermedades reumáticas y trastornos del sistema musculoesquelético. Nuestro equipo de reumatólogos altamente capacitados y experimentados se dedica a brindar atención integral y especializada a nuestros pacientes, con el objetivo de mejorar su calidad de vida y promover su bienestar general.  <br><br>
+      
+                        En nuestra clínica de reumatología, nos enfocamos en el diagnóstico temprano y preciso de enfermedades reumáticas, como la artritis reumatoide, la osteoartritis, el lupus eritematoso sistémico, la espondilitis anquilosante, la gota y muchas otras condiciones relacionadas. Utilizamos una combinación de evaluaciones clínicas, análisis de laboratorio y pruebas de diagnóstico por imágenes para obtener un panorama completo de la condición de cada paciente.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="card">
+            <img id="img-servicios" src="img/cirujia.jpeg" class="card-img-top" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <h5 class="card-title">Cirugia</h5>
+              <p class="card-text">La cirugía que transforma vidas</p>
+              <button id="button-principal" type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal4">
+                Ver Mas
+              </button>
+              <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Cirugia</h5>
+                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p style="text-align: justify;">Confíe en nuestro servicio experto para brindarle atención quirúrgica de calidad, utilizando tecnología de vanguardia y un equipo médico altamente capacitado. Recupere su bienestar y disfrute de una mejor calidad de vida con nuestra cirugía precisa y personalizada.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <img id="img-servicios" src="img/gastro.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <h5 class="card-title">Gatroenterologia</h5>
+              <p class="card-text">Cuidando su salud digestiva</p>
+              <button id="button-principal" type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal5">
+                Ver Mas
+              </button>
+              <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Gatroenterologia</h5>
+                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p style="text-align: justify;">Confíe en nuestro equipo especializado en gastroenterología para diagnosticar y tratar afecciones del sistema digestivo. Con experiencia y tecnología avanzada, ofrecemos soluciones integrales para problemas como trastornos digestivos, enfermedades hepáticas y gastrointestinales. Brindamos atención personalizada y de calidad para mejorar su bienestar digestivo y calidad de vida.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <img id="img-servicios" src="img/Neumología.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <h5 class="card-title">Neumologia</h5>
+              <p class="card-text">Respire con tranquilidad</p>
+              <button id="button-principal" type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal6">
+                Ver Mas
+              </button>
+              <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Neumologia</h5>
+                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p style="text-align: justify;">Nuestro servicio de neumología se dedica a cuidar de su salud respiratoria. Nuestro equipo de especialistas altamente capacitados utiliza técnicas y equipos de vanguardia para diagnosticar y tratar enfermedades pulmonares y respiratorias. Ya sea que necesite atención para asma, bronquitis, enfermedad pulmonar obstructiva crónica u otras afecciones, estamos comprometidos a brindarle un enfoque personalizado y mejorar su calidad de vida a través de una respiración saludable</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <div class="card">
+            <img id="img-servicios" src="img/oncologia.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <h5 class="card-title">Oncologia</h5>
+              <p class="card-text">Juntos en la lucha contra el cáncer</p>
+              <button id="button-principal" type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal7">
+                Ver Mas
+              </button>
+              <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Oncologia</h5>
+                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p style="text-align: justify;">En nuestro servicio de oncología, nos dedicamos a brindar atención integral y compasiva a pacientes que enfrentan el desafío del cáncer. Nuestro equipo multidisciplinario de especialistas en oncología trabaja en estrecha colaboración para ofrecer diagnóstico temprano, opciones de tratamiento innovadoras y cuidado de apoyo. Utilizando tecnología de vanguardia y enfoques basados en la evidencia, estamos comprometidos a brindarle el mejor cuidado posible y acompañarle en cada paso de su camino hacia la curación y la calidad de vida</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <img id="img-servicios" src="img/pesiatria.jpg" class="card-img-top" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <h5 class="card-title">Pediatria</h5>
+              <p class="card-text">Un cuidado excepcional para los más valiosos</p>
+              <button id="button-principal" type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal8">
+                Ver Mas
+              </button>
+              <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Pediatria</h5>
+                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p style="text-align: justify;">Nuestro servicio de pediatría se dedica a brindar atención integral y especializada a los niños. Nuestro equipo de médicos y enfermeras pediátricos altamente capacitados se compromete a garantizar el bienestar físico y emocional de sus hijos. Desde el cuidado preventivo y las vacunas hasta el tratamiento de enfermedades infantiles, estamos aquí para proporcionarles un entorno seguro y acogedor, donde cada niño reciba la atención personalizada y el apoyo necesario para crecer sanos y felices</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <img id="img-servicios" src="img/psiquiatria.webp" class="card-img-top" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <h5 class="card-title">Psiquiatria</h5>
+              <p class="card-text">Restaurando la salud mental y el equilibrio emocional</p>
+              <button id="button-principal" type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal9">
+                Ver Mas
+              </button>
+              <div class="modal fade" id="exampleModal9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Psiquiatria</h5>
+                      <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p style="text-align: justify;">Nuestro servicio de psiquiatría se dedica a brindar apoyo integral a aquellos que luchan contra trastornos mentales y emocionales. Nuestro equipo de psiquiatras y terapeutas altamente capacitados ofrece evaluaciones, diagnósticos precisos y tratamientos personalizados basados en la evidencia. Estamos comprometidos a brindar un ambiente seguro y confidencial donde cada paciente pueda encontrar la estabilidad mental y el bienestar emocional que merecen, trabajando juntos para construir una vida plena y satisfactoria</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+
+<div class="flotter">
+    <!-- Footer -->
+<footer  class="text-center text-lg-start bg-white text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Nuestras redes sociales:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>Clinica Salud Total
+          </h6>
+          <p style="text-align: justify;">
+            Nuestra clínica es un centro de atención médica dedicado a proporcionar servicios de calidad y cuidado integral para nuestros pacientes. Contamos con un equipo de profesionales altamente capacitados y comprometidos que se esfuerzan por brindar atención compasiva y personalizada a cada individuo que nos visita.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Servicios
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Cardiologia</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Neurologia</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Reumatologia</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Cirugia</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Servicios
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Gastroenterologia</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Neumologia</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Oncologia</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Pediatria</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+          <p><i class="fas fa-home me-3 text-secondary"></i> Medellin, Colombia</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            saludtotal@clinica.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="index.html">clinicasaludtotal.com</a>
+    | Todos Los Derechos Reservados
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</div>
+
+
+<!-- MDB -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Custom scripts -->
+<script type="text/javascript"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Salud Total</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/cruz-roja.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+          <img
+            src="img/cruz-roja.ico"
+            height="30"
+            alt="MDB Logo"
+            loading="lazy"
+          />
+          <label for="">Clinica Salud Total</label>
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+          </li>
+        </ul>
+
+        <button id="button-iniciarsesion" type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal1">
+          Contactanos
+        </button>
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Contactanos</h5>
+                <button  type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="form-outline">
+                  <input type="text" id="typeText" class="form-control" />
+                  <label class="form-label" for="typeText">Nombre</label>
+                </div>
+                <div class="form-outline">
+                  <input type="number" id="typeNumber" class="form-control" />
+                  <label class="form-label" for="typeNumber">Telefono</label>
+                </div>
+                <div class="form-outline">
+                  <input type="email" id="typeEmail" class="form-control" />
+                  <label class="form-label" for="typeEmail">Correo electronico</label>
+                </div>
+                <div class="form-outline">
+                  <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+                  <label class="form-label" for="textAreaExample">Mensaje</label>
+                </div>
+                
+                <button style="margin-top: 30px; display: flex; justify-content: center;" type="button" class="btn btn-success">Enviar</button>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="button-iniciarsesion" type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal1">
+          Iniciar sesion
+        </button>
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesion</h5>
+                <button  type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="form-outline">
+                  <input type="text" id="typeText" class="form-control" />
+                  <label class="form-label" for="typeText">Usuario</label>
+                </div>
+                <div style="margin-top: 30px;" class="form-outline">
+                  <input type="password" id="typePassword" class="form-control" />
+                  <label class="form-label" for="typePassword">Contraseña</label>
+                </div>
+                <button style="margin-top: 30px; display: flex; justify-content: center;" type="button" class="btn btn-success">Iniciar Sesion</button>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="d-flex align-items-center">
+          <a href="registro.html">
+            <button id="button-principal" type="button" class="btn btn-primary me-3">
+              Registrarse
+            </button>
+          </a>
+          
+          
+        </div>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+  
+      
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->
+
+
+<div class="nosotross">
+    <div class="mision-vision">
+        <div class="mision">
+            <h2>Mision</h2>
+            <p>Brindar atención médica integral y de calidad, centrada en el bienestar y la satisfacción de nuestros pacientes. Nos esforzamos por ofrecer servicios médicos accesibles, seguros y efectivos, utilizando tecnología avanzada y un equipo de profesionales altamente capacitados. Nuestra misión es promover la salud, prevenir enfermedades y mejorar la calidad de vida de nuestra comunidad.</p>
+        </div>
+        <div class="vision">
+            <h2>Vision</h2>
+            <p>Ser reconocidos como líderes en la prestación de servicios de salud, destacándonos por nuestra excelencia clínica, investigación y enseñanza. Buscamos ser una clínica de referencia, donde los pacientes confíen en nuestra experiencia y se sientan respaldados en todas sus necesidades de atención médica. Nuestra visión es seguir creciendo y adaptándonos a los avances médicos, enfocados en proporcionar una atención integral, personalizada y basada en la evidencia, con un enfoque centrado en el paciente y en la promoción de un estilo de vida saludable.</p>
+        </div>
+        <div class="reseña">
+            <h2>Reseña Historica</h2>
+            <p>Salud Total es una clínica que ha estado brindando servicios de atención médica integral a la comunidad desde su fundación en 1995. La clínica fue creada con la visión de proporcionar un enfoque integral de atención médica, centrado en el bienestar y la calidad de vida de los pacientes. <br><br>
+
+                Desde sus humildes comienzos, Salud Total ha crecido y se ha convertido en una institución médica de renombre en la región. Ha establecido una reputación sólida y confiable por su compromiso con la excelencia clínica y el cuidado compasivo de sus pacientes. <br><br>
+                
+                A lo largo de los años, Salud Total ha invertido en tecnología de vanguardia y ha reunido a un equipo médico altamente capacitado, compuesto por médicos especialistas, enfermeras y personal de apoyo dedicado. Esto les ha permitido ofrecer una amplia gama de servicios médicos, que incluyen especialidades como medicina interna, pediatría, ginecología, cardiología, gastroenterología y muchas más. <br><br>
+                
+                La clínica se ha enfocado en brindar una atención personalizada y de calidad a cada paciente que ingresa por sus puertas. Han establecido una relación de confianza y respeto con la comunidad, trabajando en estrecha colaboración con los pacientes para abordar sus necesidades médicas de manera integral y brindarles un enfoque holístico para su bienestar. <br><br>
+                
+                Salud Total también se ha comprometido con la responsabilidad social, participando en campañas de concientización de la salud y ofreciendo servicios médicos gratuitos en comunidades desatendidas. <br><br>
+                
+                En resumen, Salud Total ha construido una sólida trayectoria como una clínica de renombre, centrada en la excelencia clínica, la atención personalizada y el compromiso con el bienestar de sus pacientes. Su historia es un testimonio de su dedicación a la salud y el cuidado integral de la comunidad que sirven.</p>
+        </div>
+      </div>
+</div>
+  
+    
+
+  <div class="flotter">
+    <!-- Footer -->
+<footer  class="text-center text-lg-start bg-white text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Nuestras redes sociales:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>Clinica Salud Total
+          </h6>
+          <p style="text-align: justify;">
+            Nuestra clínica es un centro de atención médica dedicado a proporcionar servicios de calidad y cuidado integral para nuestros pacientes. Contamos con un equipo de profesionales altamente capacitados y comprometidos que se esfuerzan por brindar atención compasiva y personalizada a cada individuo que nos visita.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Servicios
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Cardiologia</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Neurologia</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Reumatologia</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Cirugia</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Servicios
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Gastroenterologia</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Neumologia</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Oncologia</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Pediatria</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+          <p><i class="fas fa-home me-3 text-secondary"></i> Medellin, Colombia</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            saludtotal@clinica.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="index.html">clinicasaludtotal.com</a>
+    | Todos Los Derechos Reservados
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</div>
+
+
+<!-- MDB -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Custom scripts -->
+<script type="text/javascript"></script>
+
+    
+</body>
+</html>

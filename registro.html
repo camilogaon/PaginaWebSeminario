@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleForm.css">
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="index.html">
+        <img
+          src="img/cruz-roja.ico"
+          height="30"
+          alt="MDB Logo"
+          loading="lazy"
+        />
+        <label for="">Clinica Salud Total</label>
+      </a>
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="servicios.html">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+        </li>
+      </ul>
+
+      <button id="button-iniciarsesion" type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal1">
+        Contactanos
+      </button>
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contactanos</h5>
+              <button  type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="form-outline">
+                <input type="text" id="typeText" class="form-control" />
+                <label class="form-label" for="typeText">Nombre</label>
+              </div>
+              <div class="form-outline">
+                <input type="number" id="typeNumber" class="form-control" />
+                <label class="form-label" for="typeNumber">Telefono</label>
+              </div>
+              <div class="form-outline">
+                <input type="email" id="typeEmail" class="form-control" />
+                <label class="form-label" for="typeEmail">Correo electronico</label>
+              </div>
+              <div class="form-outline">
+                <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+                <label class="form-label" for="textAreaExample">Mensaje</label>
+              </div>
+              
+              <button style="margin-top: 30px; display: flex; justify-content: center;" type="button" class="btn btn-success">Enviar</button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button id="button-iniciarsesion" type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal1">
+        Iniciar sesion
+      </button>
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesion</h5>
+              <button  type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="form-outline">
+                <input type="text" id="typeText" class="form-control" />
+                <label class="form-label" for="typeText">Usuario</label>
+              </div>
+              <div style="margin-top: 30px;" class="form-outline">
+                <input type="password" id="typePassword" class="form-control" />
+                <label class="form-label" for="typePassword">Contraseña</label>
+              </div>
+              <button style="margin-top: 30px; display: flex; justify-content: center;" type="button" class="btn btn-success">Iniciar Sesion</button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <a href="registro.html">
+          <button id="button-principal" type="button" class="btn btn-primary me-3">
+            Registrarse
+          </button>
+        </a>
+        
+        
+      </div>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+
+    
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+
+
+<div class="encabezado">
+  <img src="cruz-roja.png" alt="">
+  <h2>FORMULARIO DE INGRESO PACIENTE NUEVO</h2>
+</div>
+<table width="100%">
+  <tr>
+      <th  class="separador">INFORMACION DEL PACIENTE</th>
+  </tr>
+</table>
+<div class="informacion">
+  <label class="texto1" for="nombre">Nombres</label><br>
+  <input class="entrada1" type="text" placeholder="Ingrese su nombre"><br><br>
+  <label class="texto1" for="apellido">Apellidos:</label> <br>
+  <input class="entrada1" type="text" placeholder="Ingrese su apellido"><br><br>
+  <label class="texto1" for="fechanac">Fecha de Nacimiento:</label><br>
+  <input type="date" class="entrada1"><br><br>
+  <label class="texto1" for="tipoid">Tipo de identificacion:</label><br>
+  <select class="entrada1" name="tipoid" id="tipo id"><br>
+      <option value="value">Registro Civil</option>
+      <option value="value">Tarjeta de identidad</option>
+      <option value="value">Cedula de ciudadania</option>
+      <option value="value">Cedula de extranjeria</option>
+  </select><br><br>
+  <label for="identificacion" class="texto1">Numero de identificacion:</label><br>
+  <input class="entrada1" type="number" name="identificacion" id="identificacion" placeholder="Ingrese el numero de identificacion"><br><br>
+  <label for="sexo" class="texto1">Sexo: </label>
+  <label class="texto2" for="sexo"><input type="radio" name="sexo" id="sexo" >Femenino</label>
+  <label class="texto2" for="sexo"><input type="radio" name="sexo" id="sexo" >Masculino</label><br><br>
+  <label for="correo" class="texto1">Correo electronico:</label><br>
+  <input type="email" class="entrada1" placeholder="Ingrese su correo electronico"><br><br>
+  <label for="telefono" class="texto1">Numero de telefono:</label><br>
+  <input type="number" class="entrada1" placeholder="Ingrese su numero de telefono"><br><br>
+  <label for="direccion" class="texto1">Direccion de residencia:</label><br>
+  <input type="text" class="entrada1" placeholder="Ingrese su direccion de residencia"><br><br>
+  <label for="departamento" class="texto1">Departamento de origen:</label><br>
+  <select class="entrada1" name="departamento" id="departamento">
+      <option value="value">Amazonas</option>
+      <option value="value">Antioquia</option>
+      <option value="value">Arauca</option>
+      <option value="value">Atlántico</option>
+      <option value="value">Bogotá</option>
+      <option value="value">Bolívar</option>
+      <option value="value">Boyacá</option>
+      <option value="value">Caldas</option>
+      <option value="value">Caquetá</option>
+      <option value="value">Casanare</option>
+      <option value="value">Cauca</option>
+      <option value="value">Cesar</option>
+      <option value="value">Chocó</option>
+      <option value="value">Córdoba</option>
+      <option value="value">Cundinamarca</option>
+      <option value="value">Guainía</option>
+      <option value="value">Guaviare</option>
+      <option value="value">Huila</option>
+      <option value="value">La Guajira</option>
+      <option value="value">Magdalena</option>
+      <option value="value">Meta</option>
+      <option value="value">Nariño</option>
+      <option value="value">Norte de Santander</option>
+      <option value="value">Putumayo</option>
+      <option value="value">Quindío</option>
+      <option value="value">Risaralda</option>
+      <option value="value">San Andrés y Providencia</option>
+      <option value="value">Santander</option>
+      <option value="value">Sucre</option>
+      <option value="value">Tolima</option>
+      <option value="value">Valle del Cauca</option>
+      <option value="value">Vaupés</option>
+      <option value="value">Vichada</option>
+  </select><br><br>
+  <label for="ciudad" class="texto1">Ciudad de origen:</label><br>
+  <input type="text" class="entrada1" placeholder="Ingrese su direccion de origen "><br><br>
+  <label for="sexo" class="texto1">Estado civil: </label><br>
+  <label class="texto2" for="estadocivil"><input type="radio" name="estadocivil" id="estadocivil" >Soltero</label>
+  <label class="texto2" for="estadocivil"><input type="radio" name="estadocivil" id="estadocivil" >Casado</label>
+  <label class="texto2" for="estadocivil"><input type="radio" name="estadocivil" id="estadocivil" >Viudo</label>
+  <label class="texto2" for="estadocivil"><input type="radio" name="estadocivil" id="estadocivil" >Separado</label>
+  <label class="texto2" for="estadocivil"><input type="radio" name="estadocivil" id="estadocivil" >Divorciado</label><br><br>
+  <label for="ocupacion" class="texto1">Ocupacion: </label><br>
+  <input type="text" class="entrada1" placeholder="Ingrese su ocupacion "><br><br>
+  <label for="ocupacion" class="texto1">Contacto de emergencia: </label><br>
+  <input type="number" class="entrada1" placeholder="Ingrese el contacto"><br><br>
+</div>
+<table width="100%">
+  <tr>
+      <th  class="separador">ACUDIENTE</th>
+  </tr>
+</table>
+<div class="informacion">
+  <label class="texto1" for="nombre">Nombres</label><br>
+  <input class="entrada1" type="text" placeholder="Ingrese el nombre del acudiente"><br><br>
+  <label class="texto1" for="apellido">Apellidos:</label> <br>
+  <input class="entrada1" type="text" placeholder="Ingrese el apellido del acudiente"><br><br>
+  <label class="texto1" for="apellido">Telefono de casa:</label> <br>
+  <input class="entrada1" type="text" placeholder="Ingrese el telefono de la casa"><br><br>
+  <label class="texto1" for="apellido">Celular:</label> <br>
+  <input class="entrada1" type="text" placeholder="Ingrese el celular"><br><br>
+  <label class="texto1" for="apellido">Direccion :</label> <br>
+  <input class="entrada1" type="text" placeholder="Ingrese la direccion del acudiente"><br><br>
+  <label class="texto1" for="apellido">Parentesco:</label> <br>
+  <input class="entrada1" type="text" placeholder="Ingrese el parentesco con el paciente"><br><br>
+</div>
+<table width="100%">
+  <tr>
+      <th  class="separador">INFORMACION DEL SEGURO MEDICO</th>
+  </tr>
+</table>
+<div class="informacion">
+  <label class="texto1" for="nombre">Nombre de la EPS:</label><br>
+  <input class="entrada1" type="text" placeholder="Ingrese el nombre de la EPS"><br><br>
+  <label class="texto1" for="nombre">Estrato:</label><br>
+  <select class="entrada1" name="estrato" id="estrato">
+      <option value="value">1</option>
+      <option value="value">2</option>
+      <option value="value">3</option>
+      <option value="value">4</option>
+      <option value="value">5</option>
+      <option value="value">6</option>
+  </select><br><br>
+  <label class="texto1" for="nombre">Nombre del titular del seguro:</label><br>
+  <input class="entrada1" type="text" placeholder="Ingrese el nombre del titular"><br><br>
+  <label class="texto1" for="nombre">Fecha vigente del seguro:</label><br>
+  <input class="entrada1" type="date" ><br><br>
+</div>
+<table width="100%">
+  <tr>
+      <th  class="separador">CONSUMO DE TABACO</th>
+  </tr>
+</table>
+<div class="informacion">
+  <label class="texto1" for="nombre">Por favor, indique su historial de fumador:</label><br>
+  <label class="texto2" for="histfuma"><input type="radio" name="histfuma" id="histfuma" >Nunca he fumado</label>
+  <label class="texto2" for="histfuma"><input type="radio" name="histfuma" id="histfuma" >Antes fumaba</label>
+  <label class="texto2" for="histfuma"><input type="radio" name="histfuma" id="histfuma" >Actual fumador</label>
+  <label for="histfuma" class="texto2">- Indique la cantidad y la frecuencia con que fuma</label>
+  <input class="entrada1" type="text" ><br><br>
+</div>
+<table width="100%">
+  <tr>
+      <th  class="separador">FARMACIA DE PREFERENCIA</th>
+  </tr>
+</table>
+<div class="informacion">
+  <label class="texto1" for="nombre">Nombre de la farmacia:</label><br>
+  <input class="entrada1" type="text" placeholder="Ingrese el nombre de la farmacia"><br><br>
+  <label class="texto1" for="nombre">Telefono de la farmacia:</label><br>
+  <input class="entrada1" type="text" placeholder="Ingrese el telefono de la farmacia"><br><br>
+  <label class="texto1" for="nombre">Direccion de la farmacia:</label><br>
+  <input class="entrada1" type="text" placeholder="Ingrese la direccion de la farmacia"><br><br><br><br>
+</div>
+<div class="informacion">
+  <button class="button">REGISTRAR</button>
+</div>
+
+<!-- MDB -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Custom scripts -->
+<script type="text/javascript"></script>
+</body>
+</html>
