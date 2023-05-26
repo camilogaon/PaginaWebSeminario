@@ -71,3 +71,14 @@
 .form-outline{
     margin-bottom: 20px;
 }
+
+.preguntas-frecuentes{
+    width: 60%;
+    text-align: justify;
+}
+
+.seccion-preguntas-frecuentas{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
