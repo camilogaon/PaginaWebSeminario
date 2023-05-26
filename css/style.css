@@ -82,3 +82,19 @@
     display: flex;
     justify-content: center;
 }
+
+.sugerencias{
+    width: 50%;
+}
+
+.seccion-sugerencias{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.sugerencias h2{
+    text-align: center;
+    color: brown;
+}
+
