@@ -98,3 +98,8 @@
     color: brown;
 }
 
+
+.botones-respuesta .col{
+    display: flex;
+    justify-content: center;
+}
